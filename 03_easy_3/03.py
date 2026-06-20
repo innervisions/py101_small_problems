@@ -9,4 +9,8 @@ def print_in_box(string):
 
 print_in_box("To boldly go where no one has gone before.")
 print("\n\n")
+print_in_box("Running up that hill.")
+print("\n\n")
+print_in_box("In the beginning was the Word...")
+print("\n\n")
 print_in_box("")

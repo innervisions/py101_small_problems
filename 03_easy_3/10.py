@@ -1,5 +1,5 @@
 # 10 - What Century is That?
-def prefix(century:int) -> str:
+def suffix(century:int) -> str:
     digits = str(century)
     ones = digits[-1]
     tens = digits[-2] if century > 9 else "0"
@@ -20,7 +20,7 @@ def century(year:int) -> str:
     century = year // 100
     if year % 1000 != 0:
         century += 1
-    return str(century) + prefix(century)
+    return str(century) + suffix(century)
 
 print(century(2000) == "20th")  # True
 print(century(2001) == "21st")  # True

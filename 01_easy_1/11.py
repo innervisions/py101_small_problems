@@ -1,9 +1,12 @@
 # 11 - UTF-16 String Value
+# def utf16_value(string):
+#     sum_ = 0
+#     for char in string:
+#         sum_ += ord(char)
+#     return sum_
+
 def utf16_value(string):
-    sum_ = 0
-    for char in string:
-        sum_ += ord(char)
-    return sum_
+    return sum([ord(char) for char in string])
 
 # These examples should all print True
 print(utf16_value("Four score") == 984)
